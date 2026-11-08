@@ -9,13 +9,18 @@
     />
     <title>Контакты - СветДом</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Перейти к содержимому</a>
     <header class="site-header">
       <div class="site-header__inner container">
         <a class="site-header__logo" href="index.html">СветДом</a>
-        <nav class="site-nav" aria-label="Основная навигация">
+        <button class="menu-toggle" type="button" popovertarget="mobile-menu">
+          <span aria-hidden="true">☰</span>
+          Меню
+        </button>
+        <nav class="site-nav site-nav--desktop" aria-label="Основная навигация">
           <ul class="site-nav__list">
             <li><a class="site-nav__link" href="index.html">Главная</a></li>
             <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
@@ -37,15 +42,18 @@
       </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <div class="page-title container">
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
           <a href="index.html">Главная</a>
-          <span>→</span>
+          <span aria-hidden="true">→</span>
           <span aria-current="page">Контакты</span>
         </nav>
         <h1>Контакты</h1>
-        <p>Если хотите заказать лампу, используйте общую форму заявки.</p>
+        <p>
+          Для заказа используйте форму заявки, для вопросов — форму обратной связи ниже. Контакты
+          приведены для учебного проекта.
+        </p>
       </div>
 
       <section class="section section--gray">
@@ -78,19 +86,94 @@
         </div>
       </section>
 
+      <section class="section" id="feedback">
+        <div class="feedback-layout container">
+          <div>
+            <p class="label">Обратная связь</p>
+            <h2 class="section__title">Задать вопрос</h2>
+            <p>
+              Напишите о выборе лампы или доставке. Это учебная форма: браузер проверит поля,
+              сообщение никуда не отправляется.
+            </p>
+          </div>
+          <div>
+            <dialog open="" class="form-panel" aria-labelledby="feedback-form-title">
+              <form class="order-form" id="feedback-form" method="dialog">
+                <h2 class="order-form__title" id="feedback-form-title">Ваш вопрос</h2>
+                <div class="order-form__row">
+                  <div class="order-form__field">
+                    <label for="feedback-name">Имя *</label>
+                    <input
+                      id="feedback-name"
+                      name="name"
+                      autocomplete="name"
+                      minlength="2"
+                      required=""
+                    />
+                  </div>
+                  <div class="order-form__field">
+                    <label for="feedback-email">E-mail *</label>
+                    <input
+                      id="feedback-email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      required=""
+                    />
+                  </div>
+                </div>
+                <div class="order-form__field">
+                  <label for="feedback-message">Вопрос *</label>
+                  <textarea
+                    id="feedback-message"
+                    name="message"
+                    rows="4"
+                    minlength="10"
+                    maxlength="1000"
+                    required=""
+                  ></textarea>
+                  <small class="field-hint">От 10 до 1000 символов.</small>
+                </div>
+                <label class="order-form__checkbox" for="feedback-consent">
+                  <input id="feedback-consent" name="consent" type="checkbox" required="" />
+                  Согласен на обработку введённых данных в рамках учебной проверки *
+                </label>
+                <div class="order-form__actions">
+                  <button class="button" type="submit">Проверить сообщение</button>
+                  <button class="button button--outline" type="reset">Очистить</button>
+                </div>
+                <p class="order-form__note">
+                  Поля со знаком * обязательны. Данные не сохраняются и не отправляются.
+                </p>
+              </form>
+            </dialog>
+            <div class="form-result" role="status">
+              <h2>Поля проверены</h2>
+              <p>Это учебная демонстрация. Данные не отправлены, реальная заявка не создана.</p>
+              <a class="button button--outline" href="contacts.html">Заполнить заново</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section section--gray">
         <div class="container">
           <h2 class="section__title">Отзывы о сайте</h2>
           <div class="reviews">
             <article class="review-card">
-              <p class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</p>
+              <p class="review-card__stars">
+                <span aria-hidden="true">★★★★★</span>
+                <span class="visually-hidden">Оценка 5 из 5</span>
+              </p>
               <h3 class="review-card__author">Анна</h3>
               <p class="review-card__text">
                 Удобный и понятный сайт. Быстро нашла подходящую лампу и оставила заявку.
               </p>
             </article>
             <article class="review-card">
-              <p class="review-card__stars" aria-label="Оценка 4 из 5">★★★★☆</p>
+              <p class="review-card__stars">
+                <span aria-hidden="true">★★★★☆</span>
+                <span class="visually-hidden">Оценка 4 из 5</span>
+              </p>
               <h3 class="review-card__author">Михаил</h3>
               <p class="review-card__text">
                 Понравились фотографии и простое оформление. Хотелось бы увидеть больше моделей.
@@ -122,5 +205,38 @@
       <div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div>
     </footer>
     <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
+
+    <nav
+      class="site-nav site-nav--mobile"
+      aria-label="Мобильная навигация"
+      id="mobile-menu"
+      popover="auto"
+    >
+      <div class="site-nav__heading">
+        <strong>Разделы сайта</strong>
+        <button
+          class="menu-close"
+          type="button"
+          popovertarget="mobile-menu"
+          popovertargetaction="hide"
+        >
+          Закрыть меню
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+        <li>
+          <a class="site-nav__link" href="product.html">Лампа «Лайм»</a>
+        </li>
+        <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+        <li>
+          <a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

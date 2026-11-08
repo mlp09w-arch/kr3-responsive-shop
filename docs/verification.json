@@ -1,0 +1,254 @@
+{
+  "records": [
+    {
+      "file": "index.html",
+      "width": 360,
+      "overflow": false,
+      "broken": [],
+      "footer": 4685.625,
+      "viewport": 1000,
+      "grid": "328px"
+    },
+    {
+      "file": "catalog.html",
+      "width": 360,
+      "overflow": false,
+      "broken": [],
+      "footer": 3816.5,
+      "viewport": 1000,
+      "grid": "328px"
+    },
+    {
+      "file": "product.html",
+      "width": 360,
+      "overflow": false,
+      "broken": [],
+      "footer": 3111.875,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "order.html",
+      "width": 360,
+      "overflow": false,
+      "broken": [],
+      "footer": 2304.75,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "contacts.html",
+      "width": 360,
+      "overflow": false,
+      "broken": [],
+      "footer": 3377,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "index.html",
+      "width": 430,
+      "overflow": false,
+      "broken": [],
+      "footer": 4901.5,
+      "viewport": 1000,
+      "grid": "398px"
+    },
+    {
+      "file": "catalog.html",
+      "width": 430,
+      "overflow": false,
+      "broken": [],
+      "footer": 4030.5,
+      "viewport": 1000,
+      "grid": "398px"
+    },
+    {
+      "file": "product.html",
+      "width": 430,
+      "overflow": false,
+      "broken": [],
+      "footer": 3157.875,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "order.html",
+      "width": 430,
+      "overflow": false,
+      "broken": [],
+      "footer": 2261.25,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "contacts.html",
+      "width": 430,
+      "overflow": false,
+      "broken": [],
+      "footer": 3296.8125,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "index.html",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "footer": 2919.625,
+      "viewport": 1000,
+      "grid": "356px 356px"
+    },
+    {
+      "file": "catalog.html",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "footer": 2438.109375,
+      "viewport": 1000,
+      "grid": "356px 356px"
+    },
+    {
+      "file": "product.html",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "footer": 2111.3125,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "order.html",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "footer": 1760.359375,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "contacts.html",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "footer": 2296.484375,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "index.html",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "footer": 2259.5,
+      "viewport": 1000,
+      "grid": "230px 230px 230px 230px"
+    },
+    {
+      "file": "catalog.html",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "footer": 1876.296875,
+      "viewport": 1000,
+      "grid": "348px 348px"
+    },
+    {
+      "file": "product.html",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "footer": 1964.734375,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "order.html",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "footer": 1521.796875,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "contacts.html",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "footer": 2183.046875,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "footer": 2355.5,
+      "viewport": 1000,
+      "grid": "262px 262px 262px 262px"
+    },
+    {
+      "file": "catalog.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "footer": 1984.5,
+      "viewport": 1000,
+      "grid": "412px 412px"
+    },
+    {
+      "file": "product.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "footer": 2003.578125,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "order.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "footer": 1503.5,
+      "viewport": 1000,
+      "grid": null
+    },
+    {
+      "file": "contacts.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "footer": 2164.75,
+      "viewport": 1000,
+      "grid": null
+    }
+  ],
+  "imageChoices": [
+    {
+      "width": 360,
+      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-360.avif"
+    },
+    {
+      "width": 430,
+      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-640.avif"
+    },
+    {
+      "width": 768,
+      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-360.avif"
+    },
+    {
+      "width": 1024,
+      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-640.avif"
+    },
+    {
+      "width": 1440,
+      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-640.avif"
+    }
+  ],
+  "keyboard": "passed",
+  "forms": "passed",
+  "originalReviews": "preserved"
+}
