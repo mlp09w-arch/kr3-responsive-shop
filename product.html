@@ -9,13 +9,18 @@
     />
     <title>Лампа «Лайм» - СветДом</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Перейти к содержимому</a>
     <header class="site-header">
       <div class="site-header__inner container">
         <a class="site-header__logo" href="index.html">СветДом</a>
-        <nav class="site-nav" aria-label="Основная навигация">
+        <button class="menu-toggle" type="button" popovertarget="mobile-menu">
+          <span aria-hidden="true">☰</span>
+          Меню
+        </button>
+        <nav class="site-nav site-nav--desktop" aria-label="Основная навигация">
           <ul class="site-nav__list">
             <li><a class="site-nav__link" href="index.html">Главная</a></li>
             <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
@@ -35,13 +40,13 @@
       </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <div class="container">
         <nav class="breadcrumbs breadcrumbs--page" aria-label="Хлебные крошки">
           <a href="index.html">Главная</a>
-          <span>→</span>
+          <span aria-hidden="true">→</span>
           <a href="catalog.html">Каталог</a>
-          <span>→</span>
+          <span aria-hidden="true">→</span>
           <span aria-current="page">Лайм</span>
         </nav>
       </div>
@@ -54,6 +59,12 @@
             alt="Зелёная настольная лампа Лайм"
             width="900"
             height="900"
+            srcset="
+              images/lamp-green-360.webp 360w,
+              images/lamp-green-640.webp 640w,
+              images/lamp-green.webp     900w
+            "
+            sizes="(min-width: 1200px) 536px, (min-width: 768px) calc(50vw - 40px), calc(100vw - 32px)"
           />
         </div>
         <div class="product-detail__content">
@@ -82,9 +93,35 @@
             <h2 class="section__title">Характеристики</h2>
             <p>Перед заказом можно сравнить размер лампы с местом на рабочем столе.</p>
           </div>
-          <div class="table-wrapper">
+          <dl class="specs-cards" aria-label="Характеристики лампы «Лайм»">
+            <div>
+              <dt>Материал</dt>
+              <dd>Металл</dd>
+            </div>
+            <div>
+              <dt>Цвет</dt>
+              <dd>Зелёный</dd>
+            </div>
+            <div>
+              <dt>Высота</dt>
+              <dd>До 70 см</dd>
+            </div>
+            <div>
+              <dt>Тип цоколя</dt>
+              <dd>E27</dd>
+            </div>
+            <div>
+              <dt>Мощность</dt>
+              <dd>До 60 Вт</dd>
+            </div>
+            <div>
+              <dt>Гарантия</dt>
+              <dd>1 год</dd>
+            </div>
+          </dl>
+          <div class="table-wrapper" role="region" aria-labelledby="specs-caption" tabindex="0">
             <table class="specs-table">
-              <caption>Характеристики лампы «Лайм»</caption>
+              <caption id="specs-caption">Характеристики лампы «Лайм»</caption>
               <thead>
                 <tr>
                   <th scope="col">Параметр</th>
@@ -127,21 +164,54 @@
           <h2 class="section__title">Другие варианты</h2>
           <div class="small-products">
             <article class="small-product">
-              <img src="images/lamp-beige.webp" alt="Лампа Классика" width="900" height="900" />
+              <img
+                src="images/lamp-beige.webp"
+                alt="Лампа Классика"
+                width="900"
+                height="900"
+                srcset="
+                  images/lamp-beige-360.webp 360w,
+                  images/lamp-beige-640.webp 640w,
+                  images/lamp-beige.webp     900w
+                "
+                sizes="96px"
+              />
               <div>
                 <h3>Классика</h3>
                 <p>5 990 ₽</p>
               </div>
             </article>
             <article class="small-product">
-              <img src="images/lamp-black.webp" alt="Лампа Нуар" width="900" height="900" />
+              <img
+                src="images/lamp-black.webp"
+                alt="Лампа Нуар"
+                width="900"
+                height="900"
+                srcset="
+                  images/lamp-black-360.webp 360w,
+                  images/lamp-black-640.webp 640w,
+                  images/lamp-black.webp     900w
+                "
+                sizes="96px"
+              />
               <div>
                 <h3>Нуар</h3>
                 <p>6 490 ₽</p>
               </div>
             </article>
             <article class="small-product">
-              <img src="images/lamp-bird.webp" alt="Лампа Лесная птица" width="900" height="900" />
+              <img
+                src="images/lamp-bird.webp"
+                alt="Лампа Лесная птица"
+                width="900"
+                height="900"
+                srcset="
+                  images/lamp-bird-360.webp 360w,
+                  images/lamp-bird-640.webp 640w,
+                  images/lamp-bird.webp     900w
+                "
+                sizes="96px"
+              />
               <div>
                 <h3>Лесная птица</h3>
                 <p>8 990 ₽</p>
@@ -173,5 +243,36 @@
       <div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div>
     </footer>
     <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
+
+    <nav
+      class="site-nav site-nav--mobile"
+      aria-label="Мобильная навигация"
+      id="mobile-menu"
+      popover="auto"
+    >
+      <div class="site-nav__heading">
+        <strong>Разделы сайта</strong>
+        <button
+          class="menu-close"
+          type="button"
+          popovertarget="mobile-menu"
+          popovertargetaction="hide"
+        >
+          Закрыть меню
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+        <li>
+          <a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">
+            Лампа «Лайм»
+          </a>
+        </li>
+        <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+        <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
   </body>
 </html>

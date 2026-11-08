@@ -9,13 +9,18 @@
     />
     <title>Оставить заявку - СветДом</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Перейти к содержимому</a>
     <header class="site-header">
       <div class="site-header__inner container">
         <a class="site-header__logo" href="index.html">СветДом</a>
-        <nav class="site-nav" aria-label="Основная навигация">
+        <button class="menu-toggle" type="button" popovertarget="mobile-menu">
+          <span aria-hidden="true">☰</span>
+          Меню
+        </button>
+        <nav class="site-nav site-nav--desktop" aria-label="Основная навигация">
           <ul class="site-nav__list">
             <li><a class="site-nav__link" href="index.html">Главная</a></li>
             <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
@@ -37,100 +42,114 @@
       </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <div class="page-title container">
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
           <a href="index.html">Главная</a>
-          <span>→</span>
+          <span aria-hidden="true">→</span>
           <span aria-current="page">Заявка</span>
         </nav>
         <h1>Оставить заявку</h1>
-        <p>Это единственная форма на сайте, где нужно вводить контактные данные.</p>
+        <p>Выберите лампу и заполните контактные данные. Это учебная форма заявки.</p>
       </div>
 
       <section class="section section--gray">
         <div class="order-layout container">
-          <form class="order-form" id="order-form" action="order.html#order-form" method="get">
-            <h2 class="order-form__title">Данные для заявки</h2>
-            <div class="order-form__row">
+          <dialog open="" class="form-panel" aria-labelledby="order-form-title">
+            <form class="order-form" id="order-form" method="dialog">
+              <h2 class="order-form__title" id="order-form-title">Данные для заявки</h2>
+              <div class="order-form__row">
+                <div class="order-form__field">
+                  <label for="name">Имя *</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    minlength="2"
+                    placeholder="Иван"
+                    autocomplete="name"
+                    required=""
+                  />
+                </div>
+                <div class="order-form__field">
+                  <label for="phone">Телефон *</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    pattern="\+?[0-9 ()\-]{10,20}"
+                    placeholder="+7 999 000-00-00"
+                    autocomplete="tel"
+                    required=""
+                    title="От 10 до 20 символов: цифры, пробелы, скобки, дефис и плюс в начале"
+                    aria-describedby="phone-hint"
+                  />
+                  <small class="field-hint" id="phone-hint">Например: +7 999 000-00-00.</small>
+                </div>
+              </div>
               <div class="order-form__field">
-                <label for="name">Имя *</label>
+                <label for="email">E-mail *</label>
                 <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  minlength="2"
-                  placeholder="Иван"
-                  autocomplete="name"
-                  required
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="name@example.ru"
+                  autocomplete="email"
+                  required=""
                 />
               </div>
-              <div class="order-form__field">
-                <label for="phone">Телефон *</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  pattern="[+0-9 ()-]{10,20}"
-                  placeholder="+7 999 000-00-00"
-                  autocomplete="tel"
-                  required
-                />
-              </div>
-            </div>
-            <div class="order-form__field">
-              <label for="email">E-mail *</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="name@example.ru"
-                autocomplete="email"
-                required
-              />
-            </div>
-            <div class="order-form__row">
-              <div class="order-form__field">
-                <label for="product">Выберите лампу *</label>
-                <select id="product" name="product" required>
-                  <option value="">Не выбрана</option>
-                  <option>Лайм - 3 490 ₽</option>
-                  <option>Классика - 5 990 ₽</option>
-                  <option>Нуар - 6 490 ₽</option>
-                  <option>Лесная птица - 8 990 ₽</option>
-                </select>
+              <div class="order-form__row">
+                <div class="order-form__field">
+                  <label for="product">Выберите лампу *</label>
+                  <select id="product" name="product" required="">
+                    <option value="">Не выбрана</option>
+                    <option>Лайм - 3 490 ₽</option>
+                    <option>Классика - 5 990 ₽</option>
+                    <option>Нуар - 6 490 ₽</option>
+                    <option>Лесная птица - 8 990 ₽</option>
+                  </select>
+                </div>
+                <div class="order-form__field">
+                  <label for="date">Желаемая дата доставки</label>
+                  <input id="date" name="date" type="date" />
+                </div>
               </div>
               <div class="order-form__field">
-                <label for="date">Желаемая дата доставки</label>
-                <input id="date" name="date" type="date" />
+                <label for="message">Комментарий</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Например: позвонить после 17:00"
+                  maxlength="1000"
+                ></textarea>
               </div>
-            </div>
-            <div class="order-form__field">
-              <label for="message">Комментарий</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Например: позвонить после 17:00"
-              ></textarea>
-            </div>
-            <label class="order-form__checkbox" for="agreement">
-              <input id="agreement" name="agreement" type="checkbox" required />
-              Я согласен на обработку персональных данных *
-            </label>
-            <div class="order-form__actions">
-              <button class="button" type="submit">Отправить заявку</button>
-              <button class="button button--outline" type="reset">Очистить</button>
-            </div>
-            <p class="order-form__note">Форма учебная и не отправляет данные на сервер.</p>
-          </form>
+              <label class="order-form__checkbox" for="agreement">
+                <input id="agreement" name="agreement" type="checkbox" required="" />
+                Я согласен на обработку персональных данных *
+              </label>
+              <div class="order-form__actions">
+                <button class="button" type="submit">Проверить заявку</button>
+                <button class="button button--outline" type="reset">Очистить</button>
+              </div>
+              <p class="order-form__note">
+                Поля со знаком * обязательны. Проверка выполняется браузером; данные не отправляются
+                и не сохраняются.
+              </p>
+            </form>
+          </dialog>
+          <div class="form-result" role="status">
+            <h2>Поля проверены</h2>
+            <p>Это учебная демонстрация. Данные не отправлены, реальная заявка не создана.</p>
+            <a class="button button--outline" href="order.html">Заполнить заново</a>
+          </div>
 
           <aside class="order-info">
             <h2>Как оформить заказ</h2>
             <ol>
               <li>Выберите одну из четырёх ламп.</li>
               <li>Заполните контактные данные.</li>
-              <li>Мы уточним наличие и доставку.</li>
+              <li>Нажмите «Проверить заявку» — браузер проверит поля.</li>
             </ol>
             <p>
               <strong>Телефон:</strong>
@@ -163,5 +182,38 @@
       <div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div>
     </footer>
     <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
+
+    <nav
+      class="site-nav site-nav--mobile"
+      aria-label="Мобильная навигация"
+      id="mobile-menu"
+      popover="auto"
+    >
+      <div class="site-nav__heading">
+        <strong>Разделы сайта</strong>
+        <button
+          class="menu-close"
+          type="button"
+          popovertarget="mobile-menu"
+          popovertargetaction="hide"
+        >
+          Закрыть меню
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+        <li>
+          <a class="site-nav__link" href="product.html">Лампа «Лайм»</a>
+        </li>
+        <li>
+          <a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">
+            Заявка
+          </a>
+        </li>
+        <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
