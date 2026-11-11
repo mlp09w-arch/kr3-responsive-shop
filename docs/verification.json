@@ -619,7 +619,6 @@
     "menuResize": "desktop navigation remains accessible",
     "nativeFormsNoRequests": "passed",
     "phonePattern": "passed",
-    "reducedMotion": "passed",
     "reviews": "preserved"
   },
   "javaScriptEnabled": false,
