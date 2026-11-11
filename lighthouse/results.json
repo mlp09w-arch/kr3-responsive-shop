@@ -1,46 +1,46 @@
 [
   {
     "page": "catalog.html",
-    "url": "http://127.0.0.1:8000/catalog.html",
+    "url": "http://127.0.0.1:8010/kr3-responsive-shop/catalog.html",
     "score": 100,
     "lighthouseVersion": "13.6.0",
-    "fetchTime": "2026-11-08T18:03:32.651Z",
+    "fetchTime": "2026-11-11T11:57:43.504Z",
     "formFactor": "mobile",
     "failedAudits": []
   },
   {
     "page": "contacts.html",
-    "url": "http://127.0.0.1:8000/contacts.html",
+    "url": "http://127.0.0.1:8010/kr3-responsive-shop/contacts.html",
     "score": 100,
     "lighthouseVersion": "13.6.0",
-    "fetchTime": "2026-11-08T18:04:06.639Z",
+    "fetchTime": "2026-11-11T11:56:57.552Z",
     "formFactor": "mobile",
     "failedAudits": []
   },
   {
     "page": "index.html",
-    "url": "http://127.0.0.1:8000/index.html",
+    "url": "http://127.0.0.1:8010/kr3-responsive-shop/index.html",
     "score": 100,
     "lighthouseVersion": "13.6.0",
-    "fetchTime": "2026-11-08T18:03:32.721Z",
+    "fetchTime": "2026-11-11T11:55:49.487Z",
     "formFactor": "mobile",
     "failedAudits": []
   },
   {
     "page": "order.html",
-    "url": "http://127.0.0.1:8000/order.html",
+    "url": "http://127.0.0.1:8010/kr3-responsive-shop/order.html",
     "score": 100,
     "lighthouseVersion": "13.6.0",
-    "fetchTime": "2026-11-08T18:03:32.599Z",
+    "fetchTime": "2026-11-11T11:55:47.810Z",
     "formFactor": "mobile",
     "failedAudits": []
   },
   {
     "page": "product.html",
-    "url": "http://127.0.0.1:8000/product.html",
+    "url": "http://127.0.0.1:8010/kr3-responsive-shop/product.html",
     "score": 100,
     "lighthouseVersion": "13.6.0",
-    "fetchTime": "2026-11-08T18:04:06.406Z",
+    "fetchTime": "2026-11-11T11:56:57.711Z",
     "formFactor": "mobile",
     "failedAudits": []
   }

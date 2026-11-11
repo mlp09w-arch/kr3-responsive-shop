@@ -8,6 +8,7 @@
       content="Форма заявки на покупку настольной лампы в магазине СветДом."
     />
     <title>Оставить заявку - СветДом</title>
+    <link rel="icon" type="image/webp" href="images/lamp-green-360.webp" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
@@ -50,7 +51,7 @@
           <span aria-current="page">Заявка</span>
         </nav>
         <h1>Оставить заявку</h1>
-        <p>Выберите лампу и заполните контактные данные. Это учебная форма заявки.</p>
+        <p>Выберите лампу и подготовьте данные для заказа.</p>
       </div>
 
       <section class="section section--gray">
@@ -77,7 +78,7 @@
                     id="phone"
                     name="phone"
                     type="tel"
-                    pattern="\+?[0-9 ()\-]{10,20}"
+                    pattern="\+?[0-9 \(\)\-]{10,20}"
                     placeholder="+7 999 000-00-00"
                     autocomplete="tel"
                     required=""
@@ -133,14 +134,19 @@
                 <button class="button button--outline" type="reset">Очистить</button>
               </div>
               <p class="order-form__note">
-                Поля со знаком * обязательны. Проверка выполняется браузером; данные не отправляются
-                и не сохраняются.
+                Поля со знаком * обязательны. После проверки свяжитесь с нами для оформления заказа.
               </p>
             </form>
           </dialog>
           <div class="form-result" role="status">
-            <h2>Поля проверены</h2>
-            <p>Это учебная демонстрация. Данные не отправлены, реальная заявка не создана.</p>
+            <h2>Данные заполнены корректно</h2>
+            <p>
+              Заказ через форму не отправлен. Для оформления позвоните
+              <a href="tel:+74951234567">+7 495 123-45-67</a>
+              или напишите на
+              <a href="mailto:shop@example.ru">shop@example.ru</a>
+              .
+            </p>
             <a class="button button--outline" href="order.html">Заполнить заново</a>
           </div>
 
@@ -149,7 +155,7 @@
             <ol>
               <li>Выберите одну из четырёх ламп.</li>
               <li>Заполните контактные данные.</li>
-              <li>Нажмите «Проверить заявку» — браузер проверит поля.</li>
+              <li>Проверьте данные и позвоните нам для оформления заказа.</li>
             </ol>
             <p>
               <strong>Телефон:</strong>
@@ -165,7 +171,7 @@
       <div class="site-footer__inner container">
         <div>
           <strong class="site-footer__logo">СветДом</strong>
-          <p>Учебный интернет-магазин настольных ламп.</p>
+          <p>Настольные лампы для дома, работы и учёбы.</p>
         </div>
         <div>
           <h2 class="site-footer__title">Разделы</h2>
@@ -179,7 +185,7 @@
           <a href="mailto:shop@example.ru">shop@example.ru</a>
         </div>
       </div>
-      <div class="site-footer__bottom container">© 2026 СветДом · Учебный проект</div>
+      <div class="site-footer__bottom container">© 2026 СветДом</div>
     </footer>
     <a class="back-to-top" href="#main-content" aria-label="Наверх">↑</a>
 

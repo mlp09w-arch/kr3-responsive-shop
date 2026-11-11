@@ -1,254 +1,627 @@
 {
+  "testedAt": "2026-11-11T12:03:06.646Z",
+  "requiredWidths": [
+    360,
+    430,
+    768,
+    1024,
+    1440
+  ],
+  "intermediateWidths": [
+    639,
+    640,
+    641,
+    767,
+    769,
+    1023,
+    1025
+  ],
   "records": [
     {
-      "file": "index.html",
+      "page": "index.html",
       "width": 360,
       "overflow": false,
-      "broken": [],
-      "footer": 4685.625,
-      "viewport": 1000,
-      "grid": "328px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "328px",
+      "distorted": []
     },
     {
-      "file": "catalog.html",
+      "page": "catalog.html",
       "width": 360,
       "overflow": false,
-      "broken": [],
-      "footer": 3816.5,
-      "viewport": 1000,
-      "grid": "328px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "328px",
+      "distorted": []
     },
     {
-      "file": "product.html",
+      "page": "product.html",
       "width": 360,
       "overflow": false,
-      "broken": [],
-      "footer": 3111.875,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "order.html",
+      "page": "order.html",
       "width": 360,
       "overflow": false,
-      "broken": [],
-      "footer": 2304.75,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "contacts.html",
+      "page": "contacts.html",
       "width": 360,
       "overflow": false,
-      "broken": [],
-      "footer": 3377,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "index.html",
+      "page": "index.html",
       "width": 430,
       "overflow": false,
-      "broken": [],
-      "footer": 4901.5,
-      "viewport": 1000,
-      "grid": "398px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "398px",
+      "distorted": []
     },
     {
-      "file": "catalog.html",
+      "page": "catalog.html",
       "width": 430,
       "overflow": false,
-      "broken": [],
-      "footer": 4030.5,
-      "viewport": 1000,
-      "grid": "398px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "398px",
+      "distorted": []
     },
     {
-      "file": "product.html",
+      "page": "product.html",
       "width": 430,
       "overflow": false,
-      "broken": [],
-      "footer": 3157.875,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "order.html",
+      "page": "order.html",
       "width": 430,
       "overflow": false,
-      "broken": [],
-      "footer": 2261.25,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "contacts.html",
+      "page": "contacts.html",
       "width": 430,
       "overflow": false,
-      "broken": [],
-      "footer": 3296.8125,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "index.html",
+      "page": "index.html",
+      "width": 639,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "607px",
+      "distorted": []
+    },
+    {
+      "page": "catalog.html",
+      "width": 639,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "607px",
+      "distorted": []
+    },
+    {
+      "page": "product.html",
+      "width": 639,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "order.html",
+      "width": 639,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "contacts.html",
+      "width": 639,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "index.html",
+      "width": 640,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "292px 292px",
+      "distorted": []
+    },
+    {
+      "page": "catalog.html",
+      "width": 640,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "292px 292px",
+      "distorted": []
+    },
+    {
+      "page": "product.html",
+      "width": 640,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "order.html",
+      "width": 640,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "contacts.html",
+      "width": 640,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "index.html",
+      "width": 641,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "292.5px 292.5px",
+      "distorted": []
+    },
+    {
+      "page": "catalog.html",
+      "width": 641,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "292.5px 292.5px",
+      "distorted": []
+    },
+    {
+      "page": "product.html",
+      "width": 641,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "order.html",
+      "width": 641,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "contacts.html",
+      "width": 641,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "index.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "355.5px 355.5px",
+      "distorted": []
+    },
+    {
+      "page": "catalog.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "355.5px 355.5px",
+      "distorted": []
+    },
+    {
+      "page": "product.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "order.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "contacts.html",
+      "width": 767,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "index.html",
       "width": 768,
       "overflow": false,
-      "broken": [],
-      "footer": 2919.625,
-      "viewport": 1000,
-      "grid": "356px 356px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "356px 356px",
+      "distorted": []
     },
     {
-      "file": "catalog.html",
+      "page": "catalog.html",
       "width": 768,
       "overflow": false,
-      "broken": [],
-      "footer": 2438.109375,
-      "viewport": 1000,
-      "grid": "356px 356px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "356px 356px",
+      "distorted": []
     },
     {
-      "file": "product.html",
+      "page": "product.html",
       "width": 768,
       "overflow": false,
-      "broken": [],
-      "footer": 2111.3125,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "order.html",
+      "page": "order.html",
       "width": 768,
       "overflow": false,
-      "broken": [],
-      "footer": 1760.359375,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "contacts.html",
+      "page": "contacts.html",
       "width": 768,
       "overflow": false,
-      "broken": [],
-      "footer": 2296.484375,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "index.html",
+      "page": "index.html",
+      "width": 769,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "356.5px 356.5px",
+      "distorted": []
+    },
+    {
+      "page": "catalog.html",
+      "width": 769,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "356.5px 356.5px",
+      "distorted": []
+    },
+    {
+      "page": "product.html",
+      "width": 769,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "order.html",
+      "width": 769,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "contacts.html",
+      "width": 769,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "index.html",
+      "width": 1023,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "483.5px 483.5px",
+      "distorted": []
+    },
+    {
+      "page": "catalog.html",
+      "width": 1023,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "483.5px 483.5px",
+      "distorted": []
+    },
+    {
+      "page": "product.html",
+      "width": 1023,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "order.html",
+      "width": 1023,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "contacts.html",
+      "width": 1023,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "index.html",
       "width": 1024,
       "overflow": false,
-      "broken": [],
-      "footer": 2259.5,
-      "viewport": 1000,
-      "grid": "230px 230px 230px 230px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "230px 230px 230px 230px",
+      "distorted": []
     },
     {
-      "file": "catalog.html",
+      "page": "catalog.html",
       "width": 1024,
       "overflow": false,
-      "broken": [],
-      "footer": 1876.296875,
-      "viewport": 1000,
-      "grid": "348px 348px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "348px 348px",
+      "distorted": []
     },
     {
-      "file": "product.html",
+      "page": "product.html",
       "width": 1024,
       "overflow": false,
-      "broken": [],
-      "footer": 1964.734375,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "order.html",
+      "page": "order.html",
       "width": 1024,
       "overflow": false,
-      "broken": [],
-      "footer": 1521.796875,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "contacts.html",
+      "page": "contacts.html",
       "width": 1024,
       "overflow": false,
-      "broken": [],
-      "footer": 2183.046875,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "index.html",
-      "width": 1440,
+      "page": "index.html",
+      "width": 1025,
       "overflow": false,
-      "broken": [],
-      "footer": 2355.5,
-      "viewport": 1000,
-      "grid": "262px 262px 262px 262px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "230.25px 230.25px 230.25px 230.25px",
+      "distorted": []
     },
     {
-      "file": "catalog.html",
-      "width": 1440,
+      "page": "catalog.html",
+      "width": 1025,
       "overflow": false,
-      "broken": [],
-      "footer": 1984.5,
-      "viewport": 1000,
-      "grid": "412px 412px"
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "348.5px 348.5px",
+      "distorted": []
     },
     {
-      "file": "product.html",
-      "width": 1440,
+      "page": "product.html",
+      "width": 1025,
       "overflow": false,
-      "broken": [],
-      "footer": 2003.578125,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "order.html",
-      "width": 1440,
+      "page": "order.html",
+      "width": 1025,
       "overflow": false,
-      "broken": [],
-      "footer": 1503.5,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     },
     {
-      "file": "contacts.html",
+      "page": "contacts.html",
+      "width": 1025,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "index.html",
       "width": 1440,
       "overflow": false,
-      "broken": [],
-      "footer": 2164.75,
-      "viewport": 1000,
-      "grid": null
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "262px 262px 262px 262px",
+      "distorted": []
+    },
+    {
+      "page": "catalog.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": "412px 412px",
+      "distorted": []
+    },
+    {
+      "page": "product.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "order.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
+    },
+    {
+      "page": "contacts.html",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "footerAtBottom": true,
+      "columns": null,
+      "distorted": []
     }
   ],
   "imageChoices": [
     {
       "width": 360,
-      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-360.avif"
+      "currentSrc": "http://127.0.0.1:8010/kr3-responsive-shop/images/lamp-green-360.avif"
     },
     {
       "width": 430,
-      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-640.avif"
+      "currentSrc": "http://127.0.0.1:8010/kr3-responsive-shop/images/lamp-green-640.avif"
     },
     {
       "width": 768,
-      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-360.avif"
+      "currentSrc": "http://127.0.0.1:8010/kr3-responsive-shop/images/lamp-green-360.avif"
     },
     {
       "width": 1024,
-      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-640.avif"
+      "currentSrc": "http://127.0.0.1:8010/kr3-responsive-shop/images/lamp-green-640.avif"
     },
     {
       "width": 1440,
-      "currentSrc": "http://127.0.0.1:8000/images/lamp-green-640.avif"
+      "currentSrc": "http://127.0.0.1:8010/kr3-responsive-shop/images/lamp-green-640.avif"
     }
   ],
-  "keyboard": "passed",
-  "forms": "passed",
-  "originalReviews": "preserved"
+  "tables": [
+    {
+      "width": 360,
+      "tables": 1,
+      "rowheaders": 6,
+      "columnheaders": 2
+    },
+    {
+      "width": 430,
+      "tables": 1,
+      "rowheaders": 6,
+      "columnheaders": 2
+    },
+    {
+      "width": 768,
+      "tables": 1,
+      "rowheaders": 6,
+      "columnheaders": 2
+    },
+    {
+      "width": 1024,
+      "tables": 1,
+      "rowheaders": 6,
+      "columnheaders": 2
+    },
+    {
+      "width": 1440,
+      "tables": 1,
+      "rowheaders": 6,
+      "columnheaders": 2
+    }
+  ],
+  "scenarios": {
+    "filters": "static markup, no filtering",
+    "nativeFilterReset": "passed",
+    "keyboard": "passed",
+    "menuResize": "desktop navigation remains accessible",
+    "nativeFormsNoRequests": "passed",
+    "phonePattern": "passed",
+    "reducedMotion": "passed",
+    "reviews": "preserved"
+  },
+  "javaScriptEnabled": false,
+  "browserErrors": []
 }
